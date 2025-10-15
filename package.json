@@ -1,0 +1,37 @@
+{
+  "name": "cf7-custom-validation-messages",
+  "version": "2.4.0",
+  "description": "WordPress plugin that extends Contact Form 7 by adding custom validation messages for each field",
+  "author": "Your Name",
+  "license": "GPL-2.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/cf7-custom-validation-messages.git"
+  },
+  "scripts": {
+    "version": "echo $npm_package_version",
+    "clean": "rm -rf dist/*.zip",
+    "prebuild": "npm run clean && mkdir -p dist",
+    "build": "npm run prebuild && npm run zip",
+    "zip": "node scripts/create-zip.js",
+    "zip:manual": "zip -r dist/cf7-custom-validation-messages-v$npm_package_version.zip . -x '*.git*' 'node_modules/*' 'dist/*' '.DS_Store' '*.log' 'package*.json' 'scripts/*' '.vscode/*' '.idea/*'",
+    "release": "npm run build && echo 'Release package created in dist/ folder'",
+    "bump:patch": "npm version patch --no-git-tag-version && npm run update-plugin-version",
+    "bump:minor": "npm version minor --no-git-tag-version && npm run update-plugin-version",
+    "bump:major": "npm version major --no-git-tag-version && npm run update-plugin-version",
+    "update-plugin-version": "node scripts/update-version.js",
+    "dev": "echo 'Development mode - no build needed for this plugin'"
+  },
+  "devDependencies": {
+    "archiver": "^6.0.1"
+  },
+  "keywords": [
+    "wordpress",
+    "plugin",
+    "contact-form-7",
+    "cf7",
+    "validation",
+    "messages",
+    "custom-messages"
+  ]
+}

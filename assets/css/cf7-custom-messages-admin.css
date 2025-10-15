@@ -1,0 +1,209 @@
+/**
+ * CF7 Custom Validation Messages - Admin Styles
+ */
+
+.cf7-custom-messages-wrapper {
+    padding: 20px 0;
+}
+
+.cf7-custom-messages-wrapper h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cf7-custom-messages-wrapper .description {
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+.cf7-custom-messages-table {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.cf7-custom-messages-table thead {
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #e1e1e1;
+}
+
+.cf7-custom-messages-table th {
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 13px;
+    color: #23282d;
+}
+
+.cf7-custom-messages-table td {
+    padding: 15px;
+    border-bottom: 1px solid #e1e1e1;
+    vertical-align: middle;
+}
+
+.cf7-custom-messages-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.cf7-custom-messages-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.cf7-custom-messages-table .required-indicator {
+    color: #d63638;
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+.cf7-custom-messages-table .field-type-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    background-color: #2271b1;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.cf7-custom-messages-table input[type="text"] {
+    width: 100%;
+    max-width: 500px;
+}
+
+.cf7-custom-messages-help {
+    margin-top: 30px;
+    padding: 15px 20px;
+    background-color: #f0f6fc;
+    border-left: 4px solid #2271b1;
+    max-width: 800px;
+}
+
+.cf7-custom-messages-help h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #1d2327;
+}
+
+.cf7-custom-messages-help ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.cf7-custom-messages-help li {
+    margin-bottom: 8px;
+    color: #3c434a;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.cf7-custom-messages-help li:last-child {
+    margin-bottom: 0;
+}
+
+/* Notice styles */
+.cf7-custom-messages-wrapper .notice.inline {
+    margin: 20px 0;
+    padding: 12px;
+    max-width: 800px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 782px) {
+    .cf7-custom-messages-table {
+        font-size: 14px;
+    }
+
+    .cf7-custom-messages-table th,
+    .cf7-custom-messages-table td {
+        padding: 10px;
+    }
+
+    .cf7-custom-messages-table input[type="text"] {
+        max-width: 100%;
+    }
+}
+
+/* Clear button styles */
+.cf7-custom-messages-table td {
+    position: relative;
+}
+
+.cf7-custom-messages-table .clear-message {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #d63638;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 1;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0;
+    text-align: center;
+    opacity: 0.7;
+    transition: opacity 0.2s, background-color 0.2s;
+}
+
+.cf7-custom-messages-table .clear-message:hover {
+    opacity: 1;
+    background: #b32d2e;
+}
+
+.cf7-custom-messages-table .clear-message:focus {
+    outline: 2px solid #2271b1;
+    outline-offset: 2px;
+}
+
+/* Changed input indicator */
+.cf7-custom-messages-table input.changed {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+}
+
+/* Focused row highlight */
+.cf7-custom-messages-table tbody tr.focused-row {
+    background-color: #f0f6fc;
+}
+
+/* Message counter styles */
+.cf7-custom-messages-counter {
+    display: inline-block;
+    margin-left: 15px;
+    padding: 5px 12px;
+    background-color: #2271b1;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.cf7-custom-messages-counter strong {
+    font-weight: 600;
+}
+
+/* Search filter styles */
+.cf7-messages-search {
+    margin-bottom: 15px;
+}
+
+.cf7-messages-search input {
+    max-width: 400px;
+}
+
+/* Dark mode support (for WordPress 5.7+) */
+@media (prefers-color-scheme: dark) {
+    body.wp-admin {
+        /* Inherits WordPress admin color scheme */
+    }
+}
+

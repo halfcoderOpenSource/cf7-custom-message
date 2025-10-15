@@ -1,15 +1,14 @@
 <?php
 /**
  * Plugin Name: CF7 Custom Validation Messages
- * Plugin URI: https://github.com/halfcoder/cf7-custom-validation-messages
+ * Plugin URI: https://github.com/halfcoderOpenSource/cf7-custom-message
  * Description: Extends Contact Form 7 by adding custom validation messages for each field. Allows you to replace default CF7 error messages with your own custom messages for better user experience.
- * Version: 2.4.0
+ * Version: 2.5.0
  * Author: Mohammad Shadab Saifi
  * Author URI: https://halfaccessible.com/
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: cf7-custom-messages
- * Domain Path: /languages
+ * Text Domain: cf7-custom-validation-messages
  * Requires at least: 6.7
  * Requires PHP: 7.4
  */
@@ -22,7 +21,7 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Current plugin version.
  */
-define( 'CF7_CUSTOM_MESSAGES_VERSION', '2.4.0' );
+define( 'CF7_CUSTOM_MESSAGES_VERSION', '2.5.0' );
 define( 'CF7_CUSTOM_MESSAGES_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'CF7_CUSTOM_MESSAGES_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'CF7_CUSTOM_MESSAGES_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
@@ -73,7 +72,7 @@ if ( in_array( 'contact-form-7/wp-contact-form-7.php', apply_filters( 'active_pl
 function cf7_custom_messages_cf7_missing_notice() {
     ?>
     <div class="notice notice-error">
-        <p><?php esc_html_e( 'CF7 Custom Validation Messages requires Contact Form 7 to be installed and activated.', 'cf7-custom-messages' ); ?></p>
+        <p><?php esc_html_e( 'CF7 Custom Validation Messages requires Contact Form 7 to be installed and activated.', 'cf7-custom-validation-messages' ); ?></p>
     </div>
     <?php
 }

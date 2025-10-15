@@ -5,6 +5,17 @@ All notable changes to the CF7 Custom Validation Messages plugin will be documen
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.5.0] - 2025-10-15
+
+### Fixed
+- Fixed text domain to match plugin slug (cf7-custom-validation-messages)
+- Removed non-existent domain path from plugin headers
+- Updated tested up to WordPress 6.8
+
+### Added
+- Added WordPress.org compatible readme.txt file
+- Proper license declaration for WordPress.org
+
 ## [2.3.1] - 2025-10-15
 
 ### Fixed

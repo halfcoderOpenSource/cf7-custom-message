@@ -76,7 +76,8 @@ archive.file('uninstall.php', {
 // Documentation files (essential only)
 const docFiles = [
     'README.md',
-    'CHANGELOG.md'
+    'CHANGELOG.md',
+    'readme.txt'  // Required for WordPress.org
 ];
 
 docFiles.forEach(file => {

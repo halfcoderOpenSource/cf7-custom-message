@@ -16,11 +16,15 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 function cf7_custom_messages_uninstall() {
     global $wpdb;
 
-    // Delete all custom message meta from CF7 forms
+    // Direct database query is intentional for uninstall cleanup
+    // phpcs:disable WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
     $wpdb->query(
-        "DELETE FROM {$wpdb->postmeta} 
-        WHERE meta_key = '_cf7_custom_validation_messages'"
+        $wpdb->prepare(
+            "DELETE FROM {$wpdb->postmeta} WHERE meta_key = %s",
+            '_cf7_custom_validation_messages'
+        )
     );
+    // phpcs:enable WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
 
     // Clear any cached data
     wp_cache_flush();

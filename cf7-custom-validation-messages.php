@@ -1,17 +1,17 @@
 <?php
 /**
  * Plugin Name: CF7 Custom Validation Messages
- * Plugin URI: https://example.com/cf7-custom-validation-messages
- * Description: Extends Contact Form 7 by adding custom validation messages for each field
+ * Plugin URI: https://github.com/halfcoder/cf7-custom-validation-messages
+ * Description: Extends Contact Form 7 by adding custom validation messages for each field. Allows you to replace default CF7 error messages with your own custom messages for better user experience.
  * Version: 2.4.0
- * Author: Your Name
- * Author URI: https://example.com
+ * Author: Mohammad Shadab Saifi
+ * Author URI: https://halfaccessible.com/
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: cf7-custom-messages
  * Domain Path: /languages
- * Requires at least: 5.0
- * Requires PHP: 7.2
+ * Requires at least: 6.7
+ * Requires PHP: 7.4
  */
 
 // If this file is called directly, abort.

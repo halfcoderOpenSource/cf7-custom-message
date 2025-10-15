@@ -73,15 +73,10 @@ archive.file('uninstall.php', {
     name: `${pluginName}/uninstall.php` 
 });
 
-// Documentation files
+// Documentation files (essential only)
 const docFiles = [
     'README.md',
-    'INSTALLATION.md',
-    'USAGE-GUIDE.md',
-    'QUICK-START.md',
-    'CHANGELOG.md',
-    'TROUBLESHOOTING.md',
-    'BUGFIX-SUMMARY.md'
+    'CHANGELOG.md'
 ];
 
 docFiles.forEach(file => {

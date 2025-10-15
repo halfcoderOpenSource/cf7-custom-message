@@ -2,11 +2,11 @@
   "name": "cf7-custom-validation-messages",
   "version": "2.4.0",
   "description": "WordPress plugin that extends Contact Form 7 by adding custom validation messages for each field",
-  "author": "Your Name",
+  "author": "Mohammad Shadab Saifi <https://halfaccessible.com/>",
   "license": "GPL-2.0-or-later",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/cf7-custom-validation-messages.git"
+    "url": "https://github.com/halfcoderOpenSource/cf7-custom-message"
   },
   "scripts": {
     "version": "echo $npm_package_version",
